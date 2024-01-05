@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="one"></p>
+    <script>
+       /* var n1=20;
+        var n2=30;
+        var sum=n1+n2;
+        document.write("<h1>"+(n1+n2)+"<h1>");
+        document.getElementById("one").innerHTML="the result = "+sum;
+       document.write(sum);
+       alert("hiiii");
+      var x=  window.confirm("are you sure?");
+     window.prompt("adfasd","okay thanks");
+     if(x==true)
+     document.write("yes");
+    else
+    document.write("no"); */
+
+   // var n1= window.prompt("enter n1");
+   // var n2= window.prompt("enetr n2");
+  // var sum= Number(n1)+Number(n2);
+  // window.confirm("it is ="+sum);
+  // alert(sum);
+
+//var n1=prompt("enetr name :");
+/* function greating(name)
+{
+document.write("<h1>"+name+"<h1>");
+}
+
+greating("ameer");
+greating("mujeeb");
+
+var time = new Date()
+var h=time.getHours()
+AmOrPm(h);
+function AmOrPm(h)
+{if(h>12) document.write("good afternoon");
+else
+document.write("good morning!!")
+
+}
+document.write(time);*/
+
+
+
+
+
+
+/* function MyFunction()
+{
+document.getElementById("demo").innerHTML="updated text";
+} */
+
+/*var num = parseInt(window.prompt("How many items do you want to add"));
+        var choice=window.prompt("1(bullet), 2 (numbered), 3(lettered)");
+        var startTag,endTag;
+        switch(choice)        {
+            case '1': startTag = "<ul>";
+                      endTag="</ul>";
+                      break;
+            case "2":startTag = "<ol>";
+                      endTag="</ol>";
+                      break;
+            case "3":
+                      startTag = "<ol type='A'>";
+                      endTag="</ol>";
+                      break;
+            default:
+                      startTag = "<ul>";
+                      endTag="</ul>";
+        }
+
+        var output =startTag;
+
+        for(var i =1 ; i<=num; i++)
+         output+="<li>Item "+ i +"</li>";
+
+         output+=endTag;
+
+         document.write(output);*/
+
+/*function cal()
+{
+ 
+
+document.write("Squares of numbers from 1-100"+"<br>");
+  var result = " ";
+  
+  for (var i = 1; i <= 100; i++) {
+    result += "Square of " + i + " is: " + (i * i) + "<br>";
+  }
+
+  document.write(result);
+  <button type="button" onclick="cal()">Go</button>
+}
+
+ function fun1(){
+    document.getElementsByName("one")[0].style.color="blue";
+    document.getElementsByName("one")[1].style.color= "red";
+    document.getElementsByName("one")[2].style.color="green";
+      }
+      
+
+*/
+
+
+    </script>
+
+    Name  <input type="text" id="name1">
+    <br>
+    Score   <input type="text" id="myText">
+    <br>
+    <p id="result"> </p>
+    <br>
+    <button type="button" onclick="fun1()">go</button>
+    <script>
+      function fun1(){
+      var f= document.getElementById('myText').value;
+      var x= document.getElementById('name1').value;
+      if (f>50)
+      document.getElementById('result').innerHTML=(x +"=   pass");
+    else
+    document.getElementById('result').innerHTML=(x +"=   faild");
+      }
+    </script>
+    
+
+    
+</body>
+</html>
